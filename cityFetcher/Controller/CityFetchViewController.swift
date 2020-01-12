@@ -135,7 +135,7 @@ class CityFetchViewController: UITableViewController , UISearchBarDelegate {
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = cities.count
+       
         let filteredCount = filteredCities.count
         print(filteredCount)
         return shouldShowLoadingCell ? filteredCount + 1 : filteredCount
